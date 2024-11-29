@@ -63,8 +63,15 @@ install gh-pages
   "predeploy": "npm run build",
   "deploy": "gh-pages -d dist"
 ```
+- (v). Push all the file to the github :---
+```
+git push
+```
 
-
+- (vi). run the command in the terminal :---
+```bash
+npm run build
+```
 
 
 
