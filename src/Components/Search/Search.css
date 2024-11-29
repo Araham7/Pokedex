@@ -5,5 +5,9 @@
     margin: 15px auto;
     /* padding: 20px; */
 
-    border: 2px solid rgb(255, 255, 255);
+    /* enable this for "night-mode" */
+    /* border: 2px solid rgb(255, 255, 255); */
+
+    /* for day mode */
+    border: 2px solid black;
 }
