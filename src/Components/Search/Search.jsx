@@ -2,11 +2,15 @@ import "./Search.css"; // Importing Css.
 
 function Search() {
     return(
-        <input className="pokemon-name-input"
-        type="text" 
-        placeholder="Pokemon name..."
-        disabled // We would enable search field in future.
+        <div className="name-input-wrapper">
+
+        <input 
+        className="pokemon-input-field"
+        type="text"
+        placeholder="   Pokemon name..."
         />
+
+        </div>
     )
 }
 

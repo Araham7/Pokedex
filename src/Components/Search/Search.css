@@ -1,13 +1,28 @@
-.pokemon-name-input{
+.name-input-wrapper{
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon-input-field {
+    border: 2px solid black;
     height: 3rem;
     width: 80vw;
-    /* border-radius: 1rem; */
     margin: 15px auto;
-    /* padding: 20px; */
 
-    /* enable this for "night-mode" */
-    /* border: 2px solid rgb(255, 255, 255); */
-
-    /* for day mode */
-    border: 2px solid black;
+    /* Styles for the text entered by the user in the input field */
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
 }
+
+
+/* We are using here sudo-class-selector for changing the style of the "placeholder" */
+.pokemon-input-field::placeholder {
+    color: #f03232;
+    font-style: italic;
+    font-size: 20px;
+    opacity: 0.5;
+    /*  */
+  }

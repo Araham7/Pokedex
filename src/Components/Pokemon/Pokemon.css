@@ -8,7 +8,6 @@
     width: 160px;
     height: 160px;
 
-    /* border: 2px solid rgb(0, 247, 255); */
     padding: 20px;
 
     display: flex;
@@ -23,7 +22,6 @@
 .pokemon-image {
     width: 150px;
     height: 150px;
-    /* border: 2px solid #000; Add a border */
 }
 
 .pokemon-name-container{
@@ -34,17 +32,3 @@
     letter-spacing: 8px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

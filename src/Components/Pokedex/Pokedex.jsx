@@ -1,10 +1,21 @@
 import "./Pokedex.css"
+import Search from "../Search/Search.jsx";
+import PokemonList from "../../PokemonList/PokemonList.jsx";
 
 function Pokedex() {
     return(
-        <span className="pokedex-text">
+        <div className="pokemon-wrapper"
+        >
+
+        <div className="pokedex-text"
+        >
             Pokedex!
-        </span>
+        </div>
+
+        <Search/>
+        <PokemonList/>
+
+        </div>
     )
 }
 

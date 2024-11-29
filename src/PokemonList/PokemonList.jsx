@@ -95,7 +95,7 @@ function PokemonList() {
         {/* Control-Button */}
         <div className="control-btn">
 
-            {/* Previous-Button */}
+            {/* (1). Previous-Button */}
             <button 
             disabled={previousUrl === null} 
             className="prev-btn" 
@@ -108,7 +108,7 @@ function PokemonList() {
             Previous 
             </button>
 
-             {/* Next-Button */}
+             {/* (2). Next-Button */}
             <button 
             className="next-btn" 
             onClick={()=>{ setPokedexUrl(nextUrl) }}
