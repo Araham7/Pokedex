@@ -1,11 +1,11 @@
 *{
-    background-color: #000000;
+    background-color: #2a4828;
     color: aliceblue;
 }
 
 .pokemon-container{
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
 
     /* border: 2px solid rgb(0, 247, 255); */
     padding: 20px;

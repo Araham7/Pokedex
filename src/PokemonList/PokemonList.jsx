@@ -7,14 +7,34 @@ function PokemonList() {
     const [pokemonList, setPokemonList] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
-    const POKEDEX_URL = "https://pokeapi.co/api/v2/pokemon"
+    // const [ pokedexUrl , setPokedexUrl ] = useState("https://pokeapi.co/api/v2/pokemon?offset=20&limit=20");
+
+    // state of the "pokedexUrl" :---
+    const [ pokedexUrl , setPokedexUrl ] = useState("https://pokeapi.co/api/v2/pokemon");
+
+    // state of the "previousUrl" :---
+    const [ previousUrl , setPreviousUrl ] = useState("");
+
+    // state of the "nextUrl" :---
+    const [ nextUrl , setNextUrl ] = useState("");
 
     // function to download 20 pokemons :---
     async function downloadPokemons() {
         try {
-            const response = await axios.get(POKEDEX_URL); // Ye 20 pokemons ke list ko download karega.
+            setIsLoading(true);
+            const response = await axios.get(pokedexUrl); // Ye 20 pokemons ke list ko download karega.
             const pokemonResults = response.data.results; // "result" se array of pokemons ko nikal rahen hai.
             console.log(response.data);
+            
+            // changing the state of the "nextUrl" :---
+            setNextUrl(response.data.next);
+            console.log(response.data.next);
+
+            // changing the state of the "previousUrl" :---
+            setPreviousUrl(response.data.previous);
+            console.log(response.data.previous);
+            
+            
             
 
             // iterating over array of pokemons , and using their url, to create an array of promises
@@ -52,7 +72,11 @@ function PokemonList() {
 
     useEffect(() => {
         downloadPokemons(); // 
-    }, []);
+    }, [pokedexUrl]);
+
+
+
+
 
     return (
         <div className="pokemon-list-wrapper">
@@ -68,9 +92,30 @@ function PokemonList() {
             )}
         </div>
 
+        {/* Control-Button */}
         <div className="control-btn">
-            <button className="prev-btn">Previous</button>
-            <button className="next-btn">Next</button>
+
+            {/* Previous-Button */}
+            <button 
+            disabled={previousUrl === null} 
+            className="prev-btn" 
+            style={{
+                backgroundColor: previousUrl === null ? 'rgb(70 74 80)' : '#00ffff',
+                cursor: previousUrl === null ? 'not-allowed' : 'pointer',
+              }}
+            onClick={()=>{ setPokedexUrl(previousUrl) }}
+            > 
+            Previous 
+            </button>
+
+             {/* Next-Button */}
+            <button 
+            className="next-btn" 
+            onClick={()=>{ setPokedexUrl(nextUrl) }}
+            > 
+            Next 
+            </button>
+
         </div>
 
         </div>

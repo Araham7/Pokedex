@@ -19,6 +19,8 @@
 
 .control-btn{
     display: flex;
+
+    margin-top: 2rem;
 }
 
 
@@ -50,9 +52,9 @@
 
 button:hover{
     padding: 10px 20px;
-    background-color: #ed98f0;
+    background-color: #98b9ff;
 
-    color: #00ffff;
+    color: #000000;
 }
 
 
@@ -61,5 +63,4 @@ button:active{
 
     color: black;
 }
-
 

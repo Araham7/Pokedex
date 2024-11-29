@@ -5,6 +5,7 @@ function Search() {
         <input className="pokemon-name-input"
         type="text" 
         placeholder="Pokemon name..."
+        disabled // We would enable search field in future.
         />
     )
 }
