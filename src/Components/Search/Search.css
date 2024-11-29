@@ -1,0 +1,8 @@
+.pokemon-name-input{
+    width: 80vw;
+    /* border-radius: 1rem; */
+    margin: 15px auto;
+    padding: 20px;
+
+    border: 2px solid rgb(255, 255, 255);
+}
