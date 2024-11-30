@@ -16,7 +16,7 @@ export default defineConfig({
 })
 ```
 
-- (ii). edit `package.json` file :---
+- (ii). Add `"homepage": "htts://<your-username>.github.io/<repository-name>",` in the `package.json` file :---
 
 ```json
 {
