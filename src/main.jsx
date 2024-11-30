@@ -5,11 +5,9 @@ import { BrowserRouter } from 'react-router-dom';
 
 createRoot(document.getElementById('root')).render(
 
-  // This will enable the "router-in-all-the-pokedex-app" :---
+  // This will enable the "router-in-all-the-pokedex-application" :---
   <BrowserRouter>
-
   <App />
-
   </BrowserRouter>
 )
 

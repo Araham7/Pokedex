@@ -5,30 +5,50 @@
 } */
 
 .pokemon-container{
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
 
     padding: 20px;
 
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
 
     align-items: center;
 
     margin: 20px;
 
+    /* border: 2px solid rgb(238, 87, 32); */
+
+}
+
+.pokemon-container:hover{
+    background-color: rgb(221, 241, 212);
+
+    border-radius: 20px;
 }
 
 .pokemon-image {
-    width: 150px;
+    width: 155px;
     height: 150px;
 }
 
 .pokemon-name-container{
-    margin-top: 1rem;
+    /* margin-top: 0.12rem; */
     font-size: x-large;
     font-weight: 700;
 
     letter-spacing: 8px;
 
+    text-align: center;
+
+}
+
+.pokemon-name-container:visited{
+    background-color: #fff;
+}
+
+.pokemon-container a:visited{
+    color: black;
 }
