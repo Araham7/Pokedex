@@ -68,13 +68,12 @@ install gh-pages
 git push
 ```
 
-- (vi). run the command in the terminal :---
+- (vi). run below (`npm run build`) command in the terminal to create the dist-folder :---
 ```bash
 npm run build
 ```
 
-
-
-
-
-
+- (v). run below (`npm run deploy`) command in the terminal to upload the dist-folder(it will upload the dist folder on the github and it will create one new brach (`gh-pages`)) on the react-application on the `github-pages` :---
+```bash
+npm run deploy
+```
