@@ -1,6 +1,6 @@
-## (1). API link : https://pokeapi.co/api/v2/pokemon/ditto
+## (1). API link : https://pokeapi.co/api/v2/pokemon/
 
-# (2). 45min-useEffect-hook(PokemonList.jsx)
+# (2). useEffect-hook(PokemonList.jsx)
 
 # (3). deploying `vite-react-app` on github:
 
