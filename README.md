@@ -52,10 +52,10 @@ export default defineConfig({
 
 ```
 
-- (iii). Install package : `gh-pages` :---
+- (iii). Install package : `vite-plugin-gh-pages` :---
 
 ```bash
-install gh-pages
+npm install vite-plugin-gh-pages --save-dev
 ```
 
 - (iv). Add these two scripts in the `scripts` section of `package.json` file :---
